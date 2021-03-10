@@ -26,8 +26,10 @@ export async function getServerSideProps() {
   return {
     props: {
       img: {
-        t1: "/assets/unnamed.jpg",
-        t2: "/assets/void2.jpg",
+        t1:
+          "https://s3.amazonaws.com/dev.landsbe.boom.ai/static/media/EVGA_Z15_RGB_Gaming_Keyboard_RGB_Backlit_LED_Hotswappable_Mechanical_Kailh_Speed_Sliver_Switches_Linear_.jpeg",
+        t2:
+          "https://s3.amazonaws.com/dev.landsbe.boom.ai/static/media/78d9414c-edcb-4aab-873c-456ee606e859/profileImg.jpeg",
       },
     },
   }
