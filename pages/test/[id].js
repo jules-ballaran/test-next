@@ -1,10 +1,7 @@
 import { useRouter } from "next/router"
 import SEO from "../../src/seo"
 
-const Test = () => {
-  const router = useRouter()
-  const { id } = router.query
-
+const Test = ({ id }) => {
   return (
     <div>
       <SEO
@@ -20,6 +17,14 @@ const Test = () => {
       />
     </div>
   )
+}
+
+export async function getServerSideProps() {
+  // Fetch data from external API
+  const { id } = await useRouter()
+
+  // Pass data to the page via props
+  return { props: { id } }
 }
 
 export default Test
