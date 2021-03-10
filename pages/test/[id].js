@@ -11,10 +11,10 @@ const Test = ({ img }) => {
         description="test"
         title="test"
         siteTitle="test"
-        image={id === "1" ? img.t1 : img.t2}
+        image={id === "1" ? img.t2 : img.t1}
       />
       <p>Test: {id}</p>
-      <img src={id === "1" ? img.t1 : img.t2} alt="me" />
+      <img src={id === "1" ? img.t2 : img.t1} alt="me" />
     </div>
   )
 }
