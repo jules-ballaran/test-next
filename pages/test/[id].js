@@ -2,7 +2,9 @@ import { useRouter } from "next/router"
 import SEO from "../../src/seo"
 
 const Test = ({ img }) => {
-  const { id } = useRouter()
+  const router = useRouter()
+  const { id } = router.query
+
   return (
     <div>
       <SEO
